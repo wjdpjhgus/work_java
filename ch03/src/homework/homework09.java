@@ -7,7 +7,7 @@ public class homework09 {
 		
 		 Scanner input =new Scanner(System.in);
 
-			  System.out.println("Å°¿Í ¸ö¹«°Ô¸¦ ½Ç¼ö·Î ÀÔ·ÂÇÏ½Ã¿À :");
+			  System.out.println("í‚¤ì™€ ëª¸ë¬´ê²Œë¥¼ ì‹¤ìˆ˜ë¡œ ìž…ë ¥í•˜ì‹œì˜¤ :");
 			   
 			  double height;
 			  double weight;
@@ -15,10 +15,10 @@ public class homework09 {
 			  height = input.nextDouble(); weight = input.nextDouble(); 
 			   
 			  if (weight <= (height -100)*0.9) {
-				  System.out.println("Á¤»ó");
+				  System.out.println("ì •ìƒ");
 			  }
 			  else if (weight > (height -100)*0.9) {
-				  System.out.println("ºñ¸¸");
+				  System.out.println("ë¹„ë§Œ");
 			  }
 
 	}

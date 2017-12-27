@@ -3,9 +3,9 @@ package programming.basic;
 public class HelloOverloading {
 	
 	public static void main(String[] args) {
-		/*¸Ş¼Òµå ¿À¹ö·Îµù ¼º¸³Á¶°Ç-¸Ş¼Òµå Áßº¹ÇØ¼­ ¾µ¼ö ÀÖ´Ù.
-		1.Argument(Parameter)ÀÇ °³¼ö°¡ ÀÏÄ¡
-		2.ArgumentÀÇ Å¸ÀÔÀÌ ÀÏÄ¡ÇÒ °æ¿ì 
+		/*ë©”ì†Œë“œ ì˜¤ë²„ë¡œë”© ì„±ë¦½ì¡°ê±´-ë©”ì†Œë“œ ì¤‘ë³µí•´ì„œ ì“¸ìˆ˜ ìˆë‹¤.
+		1.Argument(Parameter)ì˜ ê°œìˆ˜ê°€ ì¼ì¹˜
+		2.Argumentì˜ íƒ€ì…ì´ ì¼ì¹˜í•  ê²½ìš° 
 		*/
 		
 		int sum = plus(10, 20);

@@ -6,7 +6,7 @@ public class homework03 {
 	public static void main(String[] args) {
 		 Scanner input =new Scanner(System.in);
 
-		   System.out.println("Å³·Î±×·¥À» ÀÔ·ÂÇÏ½Ã¿À :");
+		   System.out.println("í‚¬ë¡œê·¸ë¨ì„ ì…ë ¥í•˜ì‹œì˜¤ :");
 		 
 		   double kg;
 		   kg = input.nextDouble(); 
@@ -15,7 +15,7 @@ public class homework03 {
 		   
 		   pd = kg/0.453592;
 
-		    System.out.printf("ÆÄ¿îµå : %.3f", pd);
+		    System.out.printf("íŒŒìš´ë“œ : %.3f", pd);
 		   
 
 		   

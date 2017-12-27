@@ -2,18 +2,18 @@ package programming.basic;
 
 public class HelloProgramming {
 	
-	//ÀÎ½ºÅÏ½º º¯¼ö(Instance Variable=ÇÊµå=¸â¹ö º¯¼ö)¼±¾ğ-º¯¼ö ¼±¾ğÇÏ¸é ³»¿ë º¯°æ½Ã ÀÏÀÏÈ÷ ¹Ù²Ü ÇÊ¿ä°¡ ¾ø´Ù.
-	static String fd = "--ÇÊµå";
-	static String md = "--¸Ş¼Òµå";
+	//ì¸ìŠ¤í„´ìŠ¤ ë³€ìˆ˜(Instance Variable=í•„ë“œ=ë©¤ë²„ ë³€ìˆ˜)ì„ ì–¸-ë³€ìˆ˜ ì„ ì–¸í•˜ë©´ ë‚´ìš© ë³€ê²½ì‹œ ì¼ì¼íˆ ë°”ê¿€ í•„ìš”ê°€ ì—†ë‹¤.
+	static String fd = "--í•„ë“œ";
+	static String md = "--ë©”ì†Œë“œ";
 		
-	//ÀÚ¹Ù ÇÁ·Î±×·¥À» ½ÇÇàÇÏ´Â main() ¸Ş¼Òµå ±¸Çö
+	//ìë°” í”„ë¡œê·¸ë¨ì„ ì‹¤í–‰í•˜ëŠ” main() ë©”ì†Œë“œ êµ¬í˜„
 	public static void main(String[] args) {
-		System.out.println("ÀÚ¹Ù Å¬·¡½ºÀÇ ±¸Á¶");
-		write(fd);//¹Ø¿¡ word¿¡ ³Ö¾î¼­ ÇÑ¹ø¿¡ ÀÛµ¿½ÃÅ³ ¼ö ÀÖÀ½ 
+		System.out.println("ìë°” í´ë˜ìŠ¤ì˜ êµ¬ì¡°");
+		write(fd);//ë°‘ì— wordì— ë„£ì–´ì„œ í•œë²ˆì— ì‘ë™ì‹œí‚¬ ìˆ˜ ìˆìŒ 
 		write(md);
-		write("¾È³çÇÏ¼¼¿ä");
+		write("ì•ˆë…•í•˜ì„¸ìš”");
 	}
-	//ÇÁ·Î±×·¡¸Ó°¡ Á¤ÀÇÇÏ´Â ¸Ş¼Òµå write()ÀÇ ±¸Çö
+	//í”„ë¡œê·¸ë˜ë¨¸ê°€ ì •ì˜í•˜ëŠ” ë©”ì†Œë“œ write()ì˜ êµ¬í˜„
 	public static void write(String word) {
 		System.out.println(word);
 		

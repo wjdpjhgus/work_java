@@ -4,10 +4,10 @@ public class BasicOP {
 	
 	public static void main(String[] args) {
 		int day, remainder;
-		day = remainder = 365;//¿ìÃø¿¡¼­ ÁÂÃøÀ¸·Î º¼°Í
+		day = remainder = 365;//ìš°ì¸¡ì—ì„œ ì¢Œì¸¡ìœ¼ë¡œ ë³¼ê²ƒ
 		int week = 365 / 7;
 		
-		System.out.format("1³âÀº %dÀÏÀÌÀÌ¸ç %dÁÖÀÌ´Ù.%n", day, week);
+		System.out.format("1ë…„ì€ %dì¼ì´ì´ë©° %dì£¼ì´ë‹¤.%n", day, week);
 		
 		//remainder = remainder % 7;
 		System.out.println(remainder %= 7);

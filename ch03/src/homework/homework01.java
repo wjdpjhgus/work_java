@@ -6,17 +6,17 @@ public class homework01 {
 			
 	public static void main(String[] args) {
 		
-				//¹®Á¦1
+				//ë¬¸ì œ1
 		Scanner input = new Scanner(System.in);
 
-		System.out.println("½Ç¼ö µÎ°³¸¦ ÀÔ·ÂÇÏ½Ã¿À: ");
+		System.out.println("ì‹¤ìˆ˜ ë‘ê°œë¥¼ ì…ë ¥í•˜ì‹œì˜¤: ");
 
 		double A = input.nextDouble(); double B =input.nextDouble();
 		double ave = (A+B)/2;
 				
 		System.out.println(A);
 		System.out.println(B);
-		System.out.println("µÎ ½Ç¼öÀÇ ÇÕÀº " + ave + "ÀÌ´Ù");
+		System.out.println("ë‘ ì‹¤ìˆ˜ì˜ í•©ì€ " + ave + "ì´ë‹¤");
 				
 		  
 	}

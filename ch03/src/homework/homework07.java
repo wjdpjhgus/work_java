@@ -6,14 +6,14 @@ public class homework07 {
 	public static void main(String[] args) {
 		 Scanner input =new Scanner(System.in);
 
-		   System.out.println("¿ùÀ» ÀÔ·ÂÇÏ½Ã¿À :");
+		   System.out.println("ì›”ì„ ì…ë ¥í•˜ì‹œì˜¤ :");
 		   
 		   int month;
 		   month = input.nextInt(); 
 		  
 		   String CO;
 		   
-		   CO = month <= 6 ? "»ó¹İ±âÀÔ´Ï´Ù" : "ÇÏ¹İ±âÀÔ´Ï´Ù";		   
+		   CO = month <= 6 ? "ìƒë°˜ê¸°ì…ë‹ˆë‹¤" : "í•˜ë°˜ê¸°ì…ë‹ˆë‹¤";		   
 		   System.out.println(CO);
 		   
 		   }

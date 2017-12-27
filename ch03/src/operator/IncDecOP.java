@@ -4,9 +4,9 @@ public class IncDecOP {
 
 	public static void main(String[] args) {
 		int m = 50, n = 30;
-		System.out.printf("%d %d %n", m--, n++);//µÚ¿¡ ºÙÀ¸¸é ¸ÕÀú»ç¿ëÇÏ°í Áõ°¨ÇÑ´Ù´Â ¶æ
+		System.out.printf("%d %d %n", m--, n++);//ë’¤ì— ë¶™ìœ¼ë©´ ë¨¼ì €ì‚¬ìš©í•˜ê³  ì¦ê°í•œë‹¤ëŠ” ëœ»
 		System.out.printf("%d %d %n", m, n);
-		System.out.printf("%d %d %n", --m, ++n);//¾Õ¿¡ ºÙÀ¸¸é ¸ÕÀú Áõ°¨ ½ÃÅ°°í »ç¿ëÇÑ´Ù´Â ¶æ
+		System.out.printf("%d %d %n", --m, ++n);//ì•ì— ë¶™ìœ¼ë©´ ë¨¼ì € ì¦ê° ì‹œí‚¤ê³  ì‚¬ìš©í•œë‹¤ëŠ” ëœ»
 		System.out.printf("%d %d %n", m, n);
 	}
 

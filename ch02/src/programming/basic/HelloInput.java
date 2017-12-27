@@ -4,15 +4,15 @@ public class HelloInput {
 	
 	public static void main(String[] args) {
 		
-		//System.inÀº Å°º¸µåÀÇ ÀÔ·Â½ºÆ®¸²
+		//System.inì€ í‚¤ë³´ë“œì˜ ì…ë ¥ìŠ¤íŠ¸ë¦¼
 		java.util.Scanner input = new java.util.Scanner(System.in);
-		System.out.println("ÀÌ¸§°ú ÇĞ¹ø°ú ÇĞ¹øÀ» ÀÔ·ÂÇÏ¼¼¿ä.");
+		System.out.println("ì´ë¦„ê³¼ í•™ë²ˆê³¼ í•™ë²ˆì„ ì…ë ¥í•˜ì„¸ìš”.");
 		
-		//ÀÔ·Â¹ŞÀº ¹®ÀÚ¿­À» ÅäÅ«À¸·Î ±¸ºĞÁö¾î¼­ ¹®ÀÚ¿­ ÀÏºÎ¸¦ ¸®ÅÏ
-		String name = input.next();//.Àº ¸Ş¼Òµå¿¡ Á¢±ÙÇÑ´Ù È£ÃâÇÑ´Ù.
+		//ì…ë ¥ë°›ì€ ë¬¸ìì—´ì„ í† í°ìœ¼ë¡œ êµ¬ë¶„ì§€ì–´ì„œ ë¬¸ìì—´ ì¼ë¶€ë¥¼ ë¦¬í„´
+		String name = input.next();//.ì€ ë©”ì†Œë“œì— ì ‘ê·¼í•œë‹¤ í˜¸ì¶œí•œë‹¤.
 		int num = input.nextInt();
 		String major = input.next();
-		System.out.println("ÀÌ¸§: " + name + ", ÇĞ¹ø: " + num + ", ÇĞ°ú: " + major);
+		System.out.println("ì´ë¦„: " + name + ", í•™ë²ˆ: " + num + ", í•™ê³¼: " + major);
 	}
 
 }

@@ -6,7 +6,7 @@ public class homework10 {
 	public static void main(String[] args) {
 		 Scanner input = new Scanner(System.in);
 
-		  System.out.println("ÀÔ±İÇÒ ±İ¾×À» ÀÔ·ÂÇÏ¼¼¿ä (ÃÖ¼Ò´ÜÀ§:1000¿ø) :");
+		  System.out.println("ì…ê¸ˆí•  ê¸ˆì•¡ì„ ì…ë ¥í•˜ì„¸ìš” (ìµœì†Œë‹¨ìœ„:1000ì›) :");
 		  int Num;
 
 		  Num =input.nextInt();
@@ -16,37 +16,37 @@ public class homework10 {
 		  int c = (Num % 10000) / 5000;
 		  int d = (Num % 5000)/ 1000;
 		 
-		  System.out.println("Ãâ±İ±İ¾× "+Num+"¿ø Àº");
+		  System.out.println("ì¶œê¸ˆê¸ˆì•¡ "+Num+"ì› ì€");
 		  
 		  if (a > 0 && Num >= 1000 && Num % 1000 == 0) {
-		  System.out.print("¿À¸¸¿ø±Ç "+a+"°³");
+		  System.out.print("ì˜¤ë§Œì›ê¶Œ "+a+"ê°œ");
 		  }
 		  else if (a == 0) {
 			  System.out.print("");
 		  }
 		  if (b > 0 && Num >= 1000 && Num % 1000 == 0) {
-		  System.out.print("¸¸¿ø±Ç "+b+"°³");
+		  System.out.print("ë§Œì›ê¶Œ "+b+"ê°œ");
 		  }
 		  else if (b == 0) {
 			  System.out.print("");
 		  }
 		  if (c > 0 && Num >= 1000 && Num % 1000 == 0) {
-		  System.out.print("¿ÀÃµ¿ø±Ç "+c+"°³");
+		  System.out.print("ì˜¤ì²œì›ê¶Œ "+c+"ê°œ");
 		  }
 		  else if (c == 0) {
 			  System.out.print("");
 		  }
 		  if (d > 0 && Num >= 1000 && Num % 1000 == 0) {
-		  System.out.print("Ãµ¿ø±Ç "+d+"°³");
+		  System.out.print("ì²œì›ê¶Œ "+d+"ê°œ");
 		  }
 		  else if (d == 0) {
 			  System.out.print("");
 		  }
 		  if (Num < 1000 || Num % 1000 != 0 ) {
-			  System.out.print("Ãâ±İÇÒ ¼ö ¾ø½À´Ï´Ù.");
+			  System.out.print("ì¶œê¸ˆí•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
 			  }
 		  else if (Num >= 1000 && Num % 1000 == 0) {
-			  System.out.print(" ·Î Ãâ±İµÇ¾ú½À´Ï´Ù.");
+			  System.out.print(" ë¡œ ì¶œê¸ˆë˜ì—ˆìŠµë‹ˆë‹¤.");
 		  }
 		 
 	 }

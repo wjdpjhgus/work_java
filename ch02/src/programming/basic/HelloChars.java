@@ -3,14 +3,14 @@ package programming.basic;
 public class HelloChars {
 
 	public static void main(String[] args) {
-		System.out.println('a');		//char Çü
-		System.out.println('\\');		// \Ãâ·Â
-		System.out.println('\142');		////8Áø¼ö 142(=98)ÀÇ ASKII ÄÚµå°ª
-		System.out.println('\uAC00');	//UTF-8(unicode) °ª AC00:°¡
-		System.out.println('\uAC01');	//unicode °ª AC01:°¢
-		System.out.println('°­');
+		System.out.println('a');		//char í˜•
+		System.out.println('\\');		// \ì¶œë ¥
+		System.out.println('\142');		////8ì§„ìˆ˜ 142(=98)ì˜ ASKII ì½”ë“œê°’
+		System.out.println('\uAC00');	//UTF-8(unicode) ê°’ AC00:ê°€
+		System.out.println('\uAC01');	//unicode ê°’ AC01:ê°
+		System.out.println('ê°•');
 
-		System.out.println("hello\nworld\tHi\b\rABC\r\n");// \nÀº ¿£ÅÍ \t´Â ÅÇ \b´Â ¹é½ºÆäÀÌ½º 	\n°ú\tÁ¤µµ´Â ¾Ë¾ÆµÎ±â
+		System.out.println("hello\nworld\tHi\b\rABC\r\n");// \nì€ ì—”í„° \tëŠ” íƒ­ \bëŠ” ë°±ìŠ¤í˜ì´ìŠ¤ 	\nê³¼\tì •ë„ëŠ” ì•Œì•„ë‘ê¸°
 			System.out.println("\'");
 
 	}

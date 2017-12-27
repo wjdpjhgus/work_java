@@ -1,11 +1,11 @@
 package programming.basic;
 
 public class HelloProgramming02 {
-	//ÀÚ¹Ù ¸Ş¸ğ¸®¿¡ ¿Ã¸®´Â ½ÃÁ¡°ú ½ÇÇàÇÏ´Â ½ÃÁ¡ÀÌ ´Ù¸£´Ù. ±×·¡¼­Static»ç¿ëÇØ¼­ ÀÎ½ÄÇÏ°Ô ÇÑ´Ù.
-	static String hello = "¾È³çÇÏ¼¼¿ä. ¸ŞÀÎ(Àü¿ª)º¯¼ö-static ÇÊ¿ä";
+	//ìë°” ë©”ëª¨ë¦¬ì— ì˜¬ë¦¬ëŠ” ì‹œì ê³¼ ì‹¤í–‰í•˜ëŠ” ì‹œì ì´ ë‹¤ë¥´ë‹¤. ê·¸ë˜ì„œStaticì‚¬ìš©í•´ì„œ ì¸ì‹í•˜ê²Œ í•œë‹¤.
+	static String hello = "ì•ˆë…•í•˜ì„¸ìš”. ë©”ì¸(ì „ì—­)ë³€ìˆ˜-static í•„ìš”";
 	
 	public static void main(String[] args) {
-			String hello2 = "Áö¿ªº¯¼ö-Áö¿ª¿¡¼­¸¸ »ç¿ë°¡´É ´ë½Å static¾ø¾îµµ °¡´É";
+			String hello2 = "ì§€ì—­ë³€ìˆ˜-ì§€ì—­ì—ì„œë§Œ ì‚¬ìš©ê°€ëŠ¥ ëŒ€ì‹  staticì—†ì–´ë„ ê°€ëŠ¥";
 			System.out.println(hello);
 			System.out.println(hello2);
 			print9(hello2);

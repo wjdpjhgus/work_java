@@ -8,7 +8,7 @@ public class homework08 {
 		
 		 Scanner input =new Scanner(System.in);
 
-			  System.out.println("¼¼°¡Áö Á¤¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À :");
+			  System.out.println("ì„¸ê°€ì§€ ì •ìˆ˜ë¥¼ ìž…ë ¥í•˜ì‹œì˜¤ :");
 			   
 			  int a;
 			  int b;

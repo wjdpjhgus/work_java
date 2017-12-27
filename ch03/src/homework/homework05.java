@@ -7,7 +7,7 @@ public class homework05 {
 	public static void main(String[] args) {
 		  Scanner input = new Scanner(System.in);
 
-		  System.out.println("±â¿ø¿¬¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		  System.out.println("ê¸°ì›ì—°ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		  int a;
 
 		  a =input.nextInt();
@@ -17,24 +17,24 @@ public class homework05 {
 		  double d = a % 400;
 
 		  if (b == 0 ) {
-		   System.out.println("À±³â");
+		   System.out.println("ìœ¤ë…„");
 
 		  } 
 		  else if(c == 0) {
-		   System.out.println("Æò³â");
+		   System.out.println("í‰ë…„");
 		  }
 		  else if(d == 0) {
-		   System.out.println("À±³â");
+		   System.out.println("ìœ¤ë…„");
 		  }
 		  
 		  else if(b > 0) {
-		   System.out.println("À±³âÀÌ³ª Æò³âÀÌ ¾Æ´Õ´Ï´Ù.");
+		   System.out.println("ìœ¤ë…„ì´ë‚˜ í‰ë…„ì´ ì•„ë‹™ë‹ˆë‹¤.");
 		  }
 		  else if(c > 0) {
-			   System.out.println("À±³âÀÌ³ª Æò³âÀÌ ¾Æ´Õ´Ï´Ù.");
+			   System.out.println("ìœ¤ë…„ì´ë‚˜ í‰ë…„ì´ ì•„ë‹™ë‹ˆë‹¤.");
 		  }
 		  else if(d > 0) {
-			   System.out.println("À±³âÀÌ³ª Æò³âÀÌ ¾Æ´Õ´Ï´Ù.");
+			   System.out.println("ìœ¤ë…„ì´ë‚˜ í‰ë…„ì´ ì•„ë‹™ë‹ˆë‹¤.");
 		 }
 	 }
 }

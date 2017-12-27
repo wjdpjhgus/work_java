@@ -6,10 +6,10 @@ public class homework02 {
 	
 	public static void main(String[] args) {
 
-		//¹®Á¦2
+		//ë¬¸ì œ2
 		Scanner input = new Scanner(System.in);
 
-		System.out.println("Á¤¼ö µÎ°³¸¦ ÀÔ·ÂÇÏ½Ã¿À: ");
+		System.out.println("ì •ìˆ˜ ë‘ê°œë¥¼ ì…ë ¥í•˜ì‹œì˜¤: ");
 
 		int A = (int)input.nextDouble(); int B =(int)input.nextDouble();
 		
@@ -18,7 +18,7 @@ public class homework02 {
 		
 		System.out.println(A);
 		System.out.println(B);
-		System.out.println("µÎ Á¤¼öÀÇ ÇÕÀº " +sum+"Æò±ÕÀº"+ ave + "ÀÌ´Ù");
+		System.out.println("ë‘ ì •ìˆ˜ì˜ í•©ì€ " +sum+"í‰ê· ì€"+ ave + "ì´ë‹¤");
 		
 	}
 

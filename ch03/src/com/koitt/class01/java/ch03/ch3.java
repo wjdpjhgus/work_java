@@ -5,24 +5,24 @@ import java.util.Scanner;
 public class ch3 {
 
 	public static void main(String[] args) {
-		/*¹®Á¦1
+		/*ë¬¸ì œ1
 		Scanner input =new Scanner(System.in);
 
-		System.out.println("½Ç¼ö µÎ°³¸¦ ÀÔ·ÂÇÏ½Ã¿À: ");
+		System.out.println("ì‹¤ìˆ˜ ë‘ê°œë¥¼ ì…ë ¥í•˜ì‹œì˜¤: ");
 
 		 double A = input.nextDouble(); double B =input.nextDouble();
 
 		 double ave = (A+B)/2;
 		System.out.println(A);
 		System.out.println(B);
-		System.out.println("µÎ ½Ç¼öÀÇ ÇÕÀº " + ave + "ÀÌ´Ù");
+		System.out.println("ë‘ ì‹¤ìˆ˜ì˜ í•©ì€ " + ave + "ì´ë‹¤");
 		 */
 
 
-		/*¹®Á¦ 3
+		/*ë¬¸ì œ 3
         Scanner input =new Scanner(System.in);
 
-		System.out.println("(kg)À» ÀÔ·ÂÇÏ½Ã¿À: ");
+		System.out.println("(kg)ì„ ì…ë ¥í•˜ì‹œì˜¤: ");
 		double A;
 		A = input.nextDouble(); 
 		double po = (A/0.453592);
@@ -30,10 +30,10 @@ public class ch3 {
 		System.out.printf("%1$.3f", po);
 		 */
 
-		/*¹®Á¦4
+		/*ë¬¸ì œ4
 		 Scanner input =new Scanner(System.in);
 
-			System.out.println("¼·¾¾/È­¾¾¿Í ¿Âµµ¸¦ ÀÔ·ÂÇÏ½Ã¿À: ");
+			System.out.println("ì„­ì”¨/í™”ì”¨ì™€ ì˜¨ë„ë¥¼ ì…ë ¥í•˜ì‹œì˜¤: ");
 			String a;
 			double b;
 			a =input.next(); b = input.nextDouble(); 
@@ -44,12 +44,12 @@ public class ch3 {
 			switch(a) {
 				case "C" :
 				case "c" :
-				System.out.println("È­¾¾ C"+C);
+				System.out.println("í™”ì”¨ C"+C);
 				break;
 
 				case "F" : 
 				case "f" :
-					System.out.println("¼·¾¾ C"+F);
+					System.out.println("ì„­ì”¨ C"+F);
 
 
 
@@ -60,7 +60,7 @@ public class ch3 {
 
 		Scanner input = new Scanner(System.in);
 
-		System.out.println("±â¿ø¿¬¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.println("ê¸°ì›ì—°ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		int a;
 
 		a =input.nextInt();
@@ -70,14 +70,14 @@ public class ch3 {
 		double d = a % 400;
 
 		if (b == 0 ) {
-			System.out.println("À±³â");
+			System.out.println("ìœ¤ë…„");
 
 		}	
 		else if(c == 0) {
-			System.out.println("Æò³â");
+			System.out.println("í‰ë…„");
 		}
 		else if(d == 0) {
-			System.out.println("À±³â");
+			System.out.println("ìœ¤ë…„");
 		}
 
 	}

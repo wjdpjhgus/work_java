@@ -2,17 +2,17 @@ package programming.basic;
 
 public class HelloDefaultValue {
 
-	//ÇÊµå¼±¾ğ-¸â¹öº¯¼ö¿¡ ÇØ´çÇÏ´Â °ªÀº ÀÚµ¿À¸·Î ÃÊ±âÈ­µÊ
+	//í•„ë“œì„ ì–¸-ë©¤ë²„ë³€ìˆ˜ì— í•´ë‹¹í•˜ëŠ” ê°’ì€ ìë™ìœ¼ë¡œ ì´ˆê¸°í™”ë¨
 	static int def;
 	static boolean bool;
 	static String name;
 	
 	public static void main(String[] args) {
-		//Áö¿ªº¯¼ö ¼±¾ğ
+		//ì§€ì—­ë³€ìˆ˜ ì„ ì–¸
 		int n = 100;
 		System.out.println(n);
 		
-		//ÇÊµå »ç¿ë °¡´É
+		//í•„ë“œ ì‚¬ìš© ê°€ëŠ¥
 		System.out.println(def);
 		System.out.println(bool);
 		System.out.println(name);

@@ -1,6 +1,6 @@
 package programming.basic;
 /*
- * ³»¿ë: »ó¼ö¿Í ±×Ç¥ÇöÀ» »ìÆìº¸´Â ÇÁ·Î±×·¥
+ * ë‚´ìš©: ìƒìˆ˜ì™€ ê·¸í‘œí˜„ì„ ì‚´í´ë³´ëŠ” í”„ë¡œê·¸ë¨
  */
 public class HelloLiterals {
 

@@ -7,7 +7,7 @@ public class homework06 {
 	public static void main(String[] args) {
 			 Scanner input = new Scanner(System.in);
 
-			  System.out.println("Ãµ¸¸ÀÌÇÏÀÇ Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä :");
+			  System.out.println("ì²œë§Œì´í•˜ì˜ ì •ìˆ˜ë¥¼ ìž…ë ¥í•˜ì„¸ìš” :");
 			  int Num;
 
 			  Num =input.nextInt();
@@ -18,34 +18,34 @@ public class homework06 {
 			  int d = (Num % 100)/ 10;
 			  int e = (Num % 10)/ 1;
 			 
-			  System.out.println(Num+"Àº(´Â)");
+			  System.out.println(Num+"ì€(ëŠ”)");
 			  
 			  if (a > 0) {
-			  System.out.print(a+"¸¸");
+			  System.out.print(a+"ë§Œ");
 			  }
 			  else if (a == 0) {
 				  System.out.print("");
 			  }
 			  if (b > 0) {
-			  System.out.print(b+"Ãµ");
+			  System.out.print(b+"ì²œ");
 			  }
 			  else if (b == 0) {
 				  System.out.print("");
 			  }
 			  if (c > 0) {
-			  System.out.print(c+"¹é");
+			  System.out.print(c+"ë°±");
 			  }
 			  else if (c == 0) {
 				  System.out.print("");
 			  }
 			  if (d > 0) {
-			  System.out.print(d+"½Ê");
+			  System.out.print(d+"ì‹­");
 			  }
 			  else if (d == 0) {
 				  System.out.print("");
 			  }
 			  if (e >= 0) {
-			  System.out.print(e+"ÀÔ´Ï´Ù");
+			  System.out.print(e+"ìž…ë‹ˆë‹¤");
 			  }
 			 
 		 }
