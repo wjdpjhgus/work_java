@@ -15,6 +15,12 @@ public class practice03 {
 			String result = num.CharAt(i);
 			*/
 			
+			/*do{
+			 * System.out.print(num % 10);
+			 * num = num/10
+			 * 
+			 * while(num>0);
+			 */
 			int i = num.length()-1;
 		do {
 			char result = num.charAt(i);
