@@ -18,7 +18,7 @@ public class homework03 {
 		    System.out.printf("파운드 : %.3f", pd);
 		   
 
-		   
+		   input.close();
 
 		   }
 	}

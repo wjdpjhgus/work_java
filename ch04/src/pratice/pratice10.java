@@ -3,18 +3,43 @@ package pratice;
 public class pratice10 {
 
 	public static void main(String[] args) {
-	int n;
-	int r;
-	int k;
-	
-	for (n=0, r=0; n<10;)
-		int data[][] =new int data[n][r]
+		//배열선언과 초기화
+		int[][] pascal =new int[10][];
 		
+		//래기드 배열 만들기
+		for(int i =0; i< pascal.length; i++) {
+			pascal[i] =new int[i+1];
+		}
 		
-		data[][] {{1},{1,1},{1,2,1},{34,78,92,56}};
+		//순차적으로 돌면서 계산결과저장
+		for (int n = 0; n <pascal.length; n++) {
+			for (int r =0; r<pascal[n].length; r++) {
+				pascal[n][r] = factorial(n)/(factorial(r)*factorial(n-r));
+			
+			}
+		}
 		
-		
-
+		//순차적으로 출력
+		for (int n=0;  n < pascal.length; n++) {
+			for ( int r = 0; r < pascal[n].length; r++) {
+				System.out.print(pascal[n][r]+" ");
+			}
+			System.out.println();
+		}
 	}
 
+	static int factorial(int n) {
+		int mult = 1;
+		//0! 일때
+		if (n==0) {
+			return 1;
+		}
+		//1부턴n까지 곱하는 for문
+		for (int i =1; i<= n; i++) {
+			mult *= i;
+			
+		}
+		return mult;
+	}
+	
 }
