@@ -5,8 +5,11 @@ package com.koitt.java.class01;
  * -이미 기본으로 구현되어 있는 클래스
  * -extends로 선언하지 않아도 기본으로 상속받는 클래스
  * 
- * 접근제한자
- * -private 
+ * 접근제한자 4개
+ * -private: 같은 클래스 내부에서만 사용가느
+ * -(default): 같은 패키지 내부에서만 사용가능
+ * -protected: default범위 +상속받은 클래스까지 사용가능
+ * -public: 어느 곳이든 사용 가능
  */
 public class Animal /*extends Object*/ {
 	
