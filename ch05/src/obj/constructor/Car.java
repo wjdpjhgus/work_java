@@ -6,21 +6,29 @@ public class Car {
 	private int speed;
 
 	//브랜드 이름을 지정하는 생성자
-	public Car(String brandname) {
+	public Car(String brandName) {
 		this.brandName = brandName;
 	}
 	//브랜드 이름과 최고 속도를 지정하는 생성자
-	public Car(String brandName, int maxspeed) {
+	public Car(String brandName, int maxSpeed) {
 		this(brandName);
 		this.maxSpeed = maxSpeed;
 
 	}
 
-	//속도관렴 메소드
+	
+	//속도관련 메소드
 
+	public String getBrandName() {
+		return brandName;
+	}
+	public void setBrandName(String brandName) {
+		this.brandName = brandName;
+	}
 	public int speedUp() {
 		int tempSpeed =this.speed;
 		tempSpeed += 30;
+		
 		//최대속도보다 더 높다면 이전속도 유지
 		if (tempSpeed>this.maxSpeed) {
 			return this.speed;
