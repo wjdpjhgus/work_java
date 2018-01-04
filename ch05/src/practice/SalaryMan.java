@@ -1,15 +1,19 @@
 package practice;
 
 public class SalaryMan {
-	public int salary=1000000;
-	
-	public SalaryMan () {	
-	}
+	int salary = 1000000;
 	
 	public int getAnnualGross() {
-		  return this.salary += salary * 5;
+		  return salary * 12 + salary * 5;
 	}
 	
+	public SalaryMan() {
+		
+	}
+	
+	public SalaryMan (int salary) {	
+		this.salary=salary;
+	}
 	
 	
 	public static void main(String[] args) {
