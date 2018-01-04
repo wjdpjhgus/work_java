@@ -3,8 +3,8 @@ package inheritance.constructor;
  * 자바는 한개 클래스만 상속 받을 수 있다.
  */
 public class Motor extends Vehicle {
-	public String name ="자동차"; //이름 덮어씀 원래는 "차량"	
-	public int displacement;	//배기량
+	private String name ="자동차"; //이름 덮어씀 원래는 "차량"	
+	private int displacement;	//배기량
 	
 	//Motor의 기본생성자
 	public Motor() {
@@ -20,10 +20,10 @@ public class Motor extends Vehicle {
 	}
 	
 	public void printLnfo() {
-		System.out.print(super.name+": "+name);	
-		System.out.println(", 최대속도: "+maxSpeed+"km");
-		System.out.print("정원: "+seater+ "명");
-		System.out.println(", 배기량: "+displacement+ "cc");
+		System.out.print(super.getName()+": "+this.name);	
+		System.out.println(", 최대속도: "+this.getMaxSpeed()+"km");
+		System.out.print("정원: "+this.getSeater()+ "명");
+		System.out.println(", 배기량: "+this.displacement+ "cc");
 	}
 	
 	
