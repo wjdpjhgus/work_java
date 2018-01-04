@@ -1,4 +1,4 @@
-package co.koitt.java.class03;
+package com.koitt.java.class03;
 
 public class Cat {
 	private String name;
