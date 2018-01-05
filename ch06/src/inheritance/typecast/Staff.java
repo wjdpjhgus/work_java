@@ -5,6 +5,9 @@ public class Staff extends Faculty {
 	
 	public Staff(String name, long number, String univ, long idNumber) {
 		super(name, number,univ,idNumber);
+		
 	}
+	
+	
 
 }
