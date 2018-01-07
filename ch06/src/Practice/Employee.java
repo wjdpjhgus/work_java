@@ -8,6 +8,7 @@ public class Employee {
 	private String department;
 	private int salary;
 	
+	//getter,setter
 	public String getName() {
 		return name;
 	}
