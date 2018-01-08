@@ -28,7 +28,7 @@ public class Temporary extends Employee {
 	public void printInfo() {
 		System.out.println("월급: "+this.Setter);
 		System.out.println("이름: "+super.getName()+" 나이: "+super.getAge()+" 주소: "+super.getAddress()+" 부서: "+super.getDepartment());
-		System.out.println("비정규직, "+" 일한시간:"+getWorkhours()+"급여:"+Setter);
+		System.out.println("비정규직, "+" 일한시간: "+getWorkhours()+"급여:"+Setter);
 	}
 	
 	public static void main(String[] args) {

@@ -1,51 +1,54 @@
 package Practice;
 
 public class Complex {
-	//필드
-	private double real;
-	private double imagin;
-	
-	//생성자
-	Complex(double a, double b){ 
-		this.real = a;    
-		this.imagin = b;
+
+	private double a;	// 실수부
+	private double b;	// 허수부
+
+	public Complex(double a, double b) {
+		this.a = a;
+		this.b = b;
 	}
 
-	public Complex add(Complex c1, Complex c2) {
-		double real = c1.real + c2.real;
-		double imagin = c1.imagin + c2.imagin;
-		return new Complex(real, imagin);
+	public static Complex add(Complex c1, Complex c2) {//부동소수점 10의 배수 곱함
+		int c1A = (int)(c1.a * 10.0);
+		int c1B = (int)(c1.b * 10.0);
+		int c2A = (int)(c2.a * 10.0);
+		int c2B = (int)(c2.b * 10.0);
+
+		Complex c = new Complex((c1A + c2A) / 10.0, (c1B + c2B) / 10.0);
+		return c;
 	}
 
+	public static Complex sub(Complex c1, Complex c2) {
+		int c1A = (int)(c1.a * 10.0);
+		int c1B = (int)(c1.b * 10.0);
+		int c2A = (int)(c2.a * 10.0);
+		int c2B = (int)(c2.b * 10.0);
 
-	public Complex add(double r) {
-		double real = this.real + r;
-		double imagin = this.imagin;
-		return new Complex(real, imagin);
+		Complex c = new Complex((c1A - c2A) / 10.0, (c1B - c2B) / 10.0);
+		return c;
 	}
 
-	public String toString() { 
-		if(imagin > 0) {
-			return real + "+" + imagin + "i";
-		} else if (imagin < 0) {
-			return real + "" + imagin + "i";
-		} else {
-			return Double.toString(real);
-		}
+	public double abs() {
+		return Math.sqrt(Math.pow(this.a, 2) + Math.pow(this.b, 2));
 	}
 
+	public String print() {
+		return this.a + " + " + this.b + "i";
+	}
 
 	public static void main(String[] args) {
-		Complex c1 = new Complex(8, 8);
-		Complex c2 = new Complex(6, 8);
-		Complex c3 = new Complex(3, 2);
+		Complex x = new Complex(3.4, 4.5);
+		Complex y = new Complex(5.2, -2.4);
 
-		System.out.println(c1);
-		System.out.println(c2);
-		System.out.println(add(c1,c2));
-		System.out.println(c1.add(c2).add(c3));
-		System.out.println(c1.add(1,2).add(3).add(3, 4));
+		Complex res1 = Complex.add(x, y);
+		Complex res2 = Complex.sub(x, y);
+
+		System.out.println("더한 결과: " + res1.print());
+		System.out.println("뺀 결과: " + res2.print());
+
+		System.out.println("x의 절대값: " + x.abs());
+		System.out.println("y의 절대값: " + y.abs());
 	}
 }
-
-

@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Student extends Person {
 //필드
-	public String school;
+	public String schoolName;
 	public String major;
 	public int idNumber;
 	public double average;
@@ -17,13 +17,13 @@ public class Student extends Person {
 	
 	public Student(String school, String major, int idNumber) {
 	
-		this.school=school;
+		this.schoolName=school;
 		this.major=major;
 		this.idNumber=idNumber;
 		}
 	
 	public void printInfo () {
-		System.out.println("학교 : "+this.school);
+		System.out.println("학교 : "+this.schoolName);
 		System.out.println("학과 : "+this.major);
 		System.out.println("학번: "+this.idNumber);
 		System.out.println ("---------------------------");

@@ -9,8 +9,8 @@ public class TestDriver extends Student {
 		super(name, age, address);
 	}
 	
-	public TestDriver(String school, String major, int idNumber) {
-		super(school, major, idNumber);
+	public TestDriver(String schoolName, String major, int idNumber) {
+		super(schoolName, major, idNumber);
 		
 	}
 
