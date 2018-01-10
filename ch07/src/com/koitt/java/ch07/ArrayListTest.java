@@ -1,11 +1,12 @@
 package com.koitt.java.ch07;
 
-import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
+import java.util.ArrayList;
 
 public class ArrayListTest {
 	public static void main(String[] args) {
-		ArrayList list  = new ArrayList();
+		List<Object> list  = new ArrayList<Object>();
 
 		list.add(0.87);
 		list.add("algol");
@@ -16,7 +17,7 @@ public class ArrayListTest {
 		list.add(3.4);
 		list.add(5.8);
 
-		Iterator it = list.iterator();
+		Iterator<Object> it = list.iterator();
 		print(it);
 	
 		for (Object e : list.toArray()) {
@@ -30,7 +31,7 @@ public class ArrayListTest {
 	}
 	
 
-	private static void print(Iterator it) {
+	private static void print(Iterator<Object> it) {
 		while (it.hasNext()) {
 			System.out.println(it.next()+ " ");
 		}
