@@ -16,13 +16,20 @@ public class PersonDao {
 
 		this.list = new ArrayList<Person>();
 	}
-		public void insert(Person p) {
-			this.list.add(p);
+	public void insert(Person p) throws MyException {
+		//list에서 중복된 인적정보 찾기
+		for (Person item: this.list) {
+			//사람 이름 비교해서 같다면 중복된 사람으로 처리
+			if(item.equals(p)) {
+				throw new MyException("E01: Person 객체 중복");
+			}
 		}
-		
-		public List<Person> slectAll() {
-			return this.list;
-		}
-	
-	
+		this.list.add(p);
+	}
+
+	public List<Person> slectAll() {
+		return this.list;
+	}
+
+
 }
