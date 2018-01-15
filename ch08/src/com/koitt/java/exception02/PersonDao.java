@@ -26,10 +26,37 @@ public class PersonDao {
 		}
 		this.list.add(p);
 	}
-
+	//전체목록 가져오기
 	public List<Person> slectAll() {
 		return this.list;
 	}
 
 
+
+	//Argument로 전달받은 객체를list에서 제거
+	public void delete(Person p) throws MyException {
+		//list에서 Argument로 전달 받은 객체의 name과 동일한 객체가 있는지 확인
+		for (Person item : this.list) {
+			if (item.equals(p)) {
+				list.remove(item);
+				return;		//리턴 없으면 안끝나서 땡겨들어가는 문제가 생김 리턴 넣어서 삭제하면 끝나게 만들어줘야함
+			}
+		}
+
+		throw new MyException("E02:삭제할 사람이 없습니다.");
+	}
+
+	public void update(Person p) throws MyException {
+		//list에서 Argument로 전달 받은 객체의 name과 동일한 객체가 있는지 확인
+		for (Person item : this.list) {
+			if (item.equals(p)) {
+				//item.setName(p.getName()); name을 새로set할 필요가 없다.검색조건이 이름이라서 어차피 같은 이름
+				item.setAge(p.getAge());
+				return;		//찾아으니깐 검색을 중단하고 끝낸다.
+			}
+		}
+		
+		throw new MyException("수정할 사람이 없습니다.");
+	}
 }
+

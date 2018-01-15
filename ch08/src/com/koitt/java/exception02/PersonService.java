@@ -15,4 +15,13 @@ public class PersonService {
 	public List<Person> read() {
 		return dao.slectAll();
 	}
+	
+	public void remove(Person p) throws MyException {
+		dao.delete(p);
+		
+	}
+	public void modify(Person p) throws MyException {
+		dao.update(p);
+		
+	}
 }
