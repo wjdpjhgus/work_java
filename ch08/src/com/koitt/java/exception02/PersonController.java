@@ -61,7 +61,7 @@ public class PersonController {
 				System.exit(0);	// 프로그램 종료, 0: 정상종료, -1: 비정상종료
 				// exit의 숫자는 운영체제가 사용
 				break;
-
+ 
 			default://잘못된번호
 				System.out.println("메뉴 번호를 잘못 입력하셨습니다.");	
 			}

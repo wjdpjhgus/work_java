@@ -7,11 +7,12 @@ import java.util.Date;
 public class Board {
 
 	// 필드
-	private int id;			//게시물 번호
-	private String title;		//제목
-	private String content;	//내용
-	private String writer;		//작성자
-	private Date regDate;		//작성일
+	private int id;				//게시물 번호
+	private String title;		//게시물 제목
+	private String content;		//게시물 내용
+	private String writer;		//게시물 
+	작성자
+	private Date regDate;		//글새성일
 
 
 
