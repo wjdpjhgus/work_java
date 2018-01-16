@@ -62,7 +62,7 @@ public class PersonController {
 				// exit의 숫자는 운영체제가 사용
 				break;
 
-			default:
+			default://잘못된번호
 				System.out.println("메뉴 번호를 잘못 입력하셨습니다.");	
 			}
 		}
@@ -75,6 +75,7 @@ public class PersonController {
 		String name = this.input.nextLine();	// 한 줄 입력받음
 
 		System.out.print("나이: ");
+		
 		Integer age = null;
 		try {
 			age = Integer.parseInt(this.input.nextLine());	// 한 줄 입력받음
