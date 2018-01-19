@@ -15,7 +15,7 @@ public class PersonDao {
 	public PersonDao() {
 
 		this.list = new ArrayList<Person>();
-	}
+	} 
 	public void insert(Person p) throws MyException {
 		//list에서 중복된 인적정보 찾기
 		for (Person item: this.list) {
