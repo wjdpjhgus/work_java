@@ -44,7 +44,7 @@ SELECT *FROM emp WHERE ename >= 'L%';
 
 #14. 이름이 B와 J사이의 모든 사원의 정보를 출력
 #같이 풀이
-SELECT *FROM emp WHERE ename >= 'B%' AND ename < 'K%'; #J%는 JONE의 경우 보다 크다.
+SELECT *FROM emp WHERE ename > 'B%' AND ename <= 'I%'; #J%는 JONE의 경우 보다 크다.
 
 #15. 입사일이 81년 이외에 입사한 직원의 모든 정보를 출력
 #같이 풀이
@@ -60,9 +60,83 @@ SELECT ename, empno, deptno FROM emp WHERE(deptno!=20 AND deptno!=30);
 #18. 이름이 S로 시작하는 사원의 사원번호, 이름, 입사일, 부서번호를 출력
 SELECT empno, deptno, ename, hiredate FROM emp WHERE ename LIKE'S%';
 SELECT empno, deptno, ename, hiredate FROM emp WHERE ename >='S%'AND ename <'T';
+
 #19. 입사일이 82년도인 직원의 모든 정보를 출력
 SELECT * FROM emp WHERE hiredate >= '1982-01-01' AND hiredate <='1982-12-31';
+
 #20. 이름 중 대소문자 구분없이 S또는 s가 들어있는 직원의 모든 정보를 출력
 SELECT * FROM emp WHERE ename LIKE '%S%' OR ename LIKE '%s%';
 #같이 풀이
 
+# 21. 이름이 'S'로 시작하고 마지막 글자가 'T'인 직원이 정보를 출력 (단 이름은 전체 5자리이다.)
+SELECT * FROM emp WHERE ename LIKE 'S%T' AND LENGTH(ename) <= 5;
+SELECT * FROM emp WHERE ename LIKE 'S___T';
+ #_는 문자 하나하나
+ 
+# 22. 첫번째 문자는 관계없고 두번째 문자가 'A'인 직원의 모든 정보를 출력
+SELECT * FROM emp WHERE ename LIKE '_A%';
+
+# 23. 성과급이 null인 직원의 모든 정보를 출력
+SELECT * FROM emp WHERE comm IS NULL; #NULL은 IS써야함
+
+# 24. 성과급이 null이 아닌 직원의 정보를 출력
+SELECT * FROM emp WHERE comm IS NOT NULL;
+SELECT * FROM emp WHERE comm NOT (IS NULL);
+SELECT * FROM emp WHERE comm != NULL;
+
+# LIKE , = , IS
+
+# 25. 성과급이 null이 아니고 0이 아닌 직원의 정보를 출력
+SELECT * FROM emp WHERE comm IS NOT NULL AND comm != 0;
+
+# 26. 부서가 30번 부서원중에서 급여가 1500 이상인 직원의 이름, 부서, 월급을 출력
+SELECT ename, deptno, sal FROM emp WHERE deptno = 30 AND sal >=1500;
+
+# 27. 이름의 첫글자가 'K'로 시작하거나 부서번호가 30인 직원의 사원번호, 이름, 부서번호를 출력
+SELECT empno, ename,deptno FROM emp WHERE ename LIKE 'K%' OR deptno = 30;
+
+# 28. 급여가 1500 이상이고 부서번호가 30번인 사원중 직무가 MANAGER인 직원의 모든 정보를 출력
+SELECT * FROM emp WHERE sal >=1500 AND deptno =30 AND job = 'MANAGER';
+
+# 29. 부서번호가 30인 직원의 모든정보를 사원번호에 대하여 오름차순으로 정렬하여 출력
+SELECT * FROM emp WHERE deptno = 30 ORDER BY empno ASC;
+
+# 30. 부서번호로 내림차순 하고 이름순으로 오름차순, 급여순으로 내림차순 출력
+SELECT * FROM emp ORDER BY deptno DESC,ename ASC, sal DESC;
+
+#교재 42page
+#부서번호와 그 부서에 속한 사원들의 급여액 합계를 보이시오.
+SELECT deptno, SUM(sal) FROM emp GROUP BY deptno;
+#GROUP BY deptno 부서번호를 기준으로라는 말 이거 빼면 전체 사원의 합을 구함
+
+#가장 많은 급여를 받는 사원의 급여액과 가장 적은 급여를 받는 사원의 급여액을 보이시오.
+SELECT MAX(sal), MIN(sal) FROM emp;
+SELECT deptno, MAX(sal), MIN(sal) FROM emp GROUP BY deptno;
+
+#가장많은 급여를 받는 사원의 이름을 보이시오
+SELECT ename FROM emp WHERE sal = (SELECT MAX(sal) FROM emp);
+########################
+
+#사원들의 현재 급여와 급여를 10% 인상했을때의 예상 급여를 보이시오
+SELECT ename, sal , sal*1.1 FROM emp;
+
+#모든 사원들의 이름과 부서 이름을 보이시오(EQUAL-JOIN사용)
+SELECT emp.ename,dept.dname
+FROM emp, dept
+WHERE emp.deptno = dept.deptno;
+
+SELECT e.ename, d.dname
+FROM emp e, dep d #별칭 ex지음emp를 e라고 하겠다.
+WHERE e.deptno = d.deptno;
+#테이블에 별칭을 지을 수 있다.
+
+#SMITH 사원이 속한 부서의 위치는 어디인가?
+SELECT e.ename, d.dname, d.loc
+FROM emp e, dept d
+WHERE e.deptno = d.deptno AND e.ename = 'SMITH';
+#################################
+
+#사원의 이름과 그 사원의 상사 이름을 보이시오(자기 참조)
+SELECT e.ename, m.ename
+FROM emp e, emp m
+WHERE e.mgr = m.empno;

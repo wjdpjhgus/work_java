@@ -17,7 +17,7 @@ CREATE TABLE dept(
 #empno: 사원번호(기본키)
 #ename: 사원명
 #job: 직책
-#mgr: 매니저
+#mgr: 매니저 
 #hiredate: 입사일
 #sal: 급여
 #comm: 성과급
