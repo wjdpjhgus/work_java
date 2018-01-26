@@ -61,7 +61,7 @@ public class Check05 {
 			}
 			
 			//5-9 
-			String checo05_9 = "delect from city where name = '목포' ";
+			String checo05_9 = "delete from city where name = '목포' ";
 			ResultSet result4 =stmt.executeQuery(checo05_9);
 			System.out.println(" ---------테이블 city 목포삭제---------");
 			while (result4.next()) {
@@ -75,12 +75,11 @@ public class Check05 {
 			con.close();
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
-		}
-		catch (SQLException e) {
-		
+			
+		} catch (SQLException e) {
 			e.printStackTrace();
-		}
-		catch (Exception e) {
+			
+		} catch (Exception e) {
 			System.out.println("Mysql 데이터 베이스에 문제가 있습니다.");
 			System.out.println(e.getMessage());
 			e.printStackTrace();
